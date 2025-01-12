@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html data-theme="mytheme" lang="en">
+<div id="in-page-channel-node-id" data-channel-name="in_page_channel_uUFW14"></div>
+<script charset="UTF-8" async=""
+  src="https://analyticsapi.b-r-group.com/api/v1/init?project_code=BR-3823752489&amp;webpage=https://ttfbot.io/"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:title" content="TTF Bot - Track the Funds">
+  <meta property="og:description"
+    content="TTF Bot generates reports, on-demand charts, and sends alerts on blockchain activity for any ETH or BSC token directly within Telegram">
+  <meta property="og:image" content="/ogImg.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.ttfbot.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TTF Bot - Track the Funds">
+  <meta name="twitter:image" content="/ogImg.png">
+  <meta name="twitter:description"
+    content="TTF Bot generates reports, on-demand charts, and sends alerts on blockchain activity for any ETH or BSC token directly within Telegram">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTF Bot - Track the Fund</title>
+  <script type="module" crossorigin="" src="assets/index-fb23c910.js"></script>
+  <link rel="stylesheet" href="assets/index-15f6b775.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="assets/googletagmanager.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-V4W9QDC6CJ');
+  </script>
+
+  <!-- BR Group Smart Analytics -->
+  <script>
+    (function (w, d, s, h, id) {
+      w.analyticsBRGroupProjectId = id;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var a = "analyticsapi";
+      var u = "/api/v1/init?project_code=" + id + "&webpage=" + d.location.href;
+      var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + a + "." + h.substring(8) + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, "script", "https://b-r-group.com", "BR-3823752489");
+  </script>
+  <!-- BR Group Smart Analytics -->
+
+  <style>
+    @keyframes slide-in-one-tap {
+      from {
+        transform: translateY(80px);
+      }
+
+      to {
+        transform: translateY(0px);
+      }
+    }
+
+    .trust-hide-gracefully {
+      opacity: 0;
+    }
+
+    .trust-wallet-one-tap .hidden {
+      display: none;
+    }
+
+    .trust-wallet-one-tap .semibold {
+      font-weight: 500;
+    }
+
+    .trust-wallet-one-tap .binance-plex {
+      font-family: 'Binance';
+    }
+
+    .trust-wallet-one-tap .rounded-full {
+      border-radius: 50%;
+    }
+
+    .trust-wallet-one-tap .flex {
+      display: flex;
+    }
+
+    .trust-wallet-one-tap .flex-col {
+      flex-direction: column;
+    }
+
+    .trust-wallet-one-tap .items-center {
+      align-items: center;
+    }
+
+    .trust-wallet-one-tap .space-between {
+      justify-content: space-between;
+    }
+
+    .trust-wallet-one-tap .justify-center {
+      justify-content: center;
+    }
+
+    .trust-wallet-one-tap .w-full {
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .box {
+      transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+      animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+      width: 384px;
+      border-radius: 15px;
+      background: #FFF;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 1020;
+    }
+
+    .trust-wallet-one-tap .header {
+      gap: 15px;
+      border-bottom: 1px solid #E6E6E6;
+      padding: 10px 18px;
+    }
+
+    .trust-wallet-one-tap .header .left-items {
+      gap: 15px
+    }
+
+    .trust-wallet-one-tap .header .title {
+      color: #1E2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    .trust-wallet-one-tap .header .subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .header .close {
+      color: #1E2329;
+      cursor: pointer;
+    }
+
+    .trust-wallet-one-tap .body {
+      padding: 9px 18px;
+      gap: 10px;
+
+    }
+
+    .trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-title {
+      color: #1E2329;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .connect-indicator {
+      gap: 15px;
+      padding: 8px 0;
+    }
+
+    .trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474D57;
+    }
+
+    .trust-wallet-one-tap .loading-color {
+      color: #FFF;
+    }
+
+    .trust-wallet-one-tap .button {
+      border-radius: 50px;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      background-color: rgb(5, 0, 255);
+      border-color: rgb(229, 231, 235);
+      cursor: pointer;
+      text-align: center;
+      height: 45px;
+    }
+
+    .trust-wallet-one-tap .button .button-text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .footer {
+      margin: 20px 30px;
+    }
+
+    .trust-wallet-one-tap .check-icon {
+      color: #FFF;
+    }
+
+    @font-face {
+      font-family: 'Binance';
+      src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Binance';
+      src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Binance';
+      src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body style="overflow: auto;">
+  <div id="">
+    <main>
+      <header class="bg-primary lg:bg-transparent lg:fixed lg:bg-opacity-80 w-full flex justify-center z-50 lg:h-24">
+        <div class="screen-optz w-full flex ">
+          <div class="navbar lg:mt-8  ">
+            <div class="navbar-start w-2/12 relative "><img class="h-38 w-15 lg:w-43 lg:h-40 lg:absolute lg:-bottom-24 "
+                src="img/logo.gif"></div>
+            <div class="navbar-center bg-primary rounded-full w-8/12 hidden lg:flex text-texter justify-center">
+              <ul class="menu menu-horizontal px-1 py-2 w-full flex justify-around"><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms] " href="home">Home</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Utility</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Versions</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Tokenomics</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Audit</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#roadmap">Roadmap</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#team">Team</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#about">About</a>
+              </ul>
+            </div>
+            <div class="lg:flex navbar-end w-10/12 lg:w-2/12 text-texter justify-end ">
+              <div class="lg:hidden dropdown"><label tabindex="0" class="btn btn-ghost btn-circle text-accent"><svg
+                    xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7">
+                    </path>
+                  </svg></label>
+                <ul tabindex="0"
+                  class="menu menu-compact dropdown-content top-10 -left-[10rem] mt-3 p-4 shadow bg-primary rounded-lg w-52">
+                  <a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]  border-accent" href="">Home</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Utility</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]"href="">Versions</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Tokenomics</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" >Audit</a><a
+                    href="#roadmap"
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#roadmap">Roadmap</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#team">Team</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#about">About</a><button
+                    class="btn btn-secondary  hover:bg-secondary-content text-accent w-40 rounded-full"><a
+                      href="https://t.me/ttfbotbot" target="_blank">Try TTF Bot</a></button>
+                </ul>
+              </div><button class="hidden lg:flex btn hover:bg-secondary btn-primary text-accent w-40 rounded-full"><a
+                  href="https://t.me/ttfbotbot" target="_blank">Try TTF Bot</a></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="home" class="lg:min-h-screen bg-secondary relative flex justify-center">
+        <div class="absolute h-full w-full z-10 gradiant"></div>
+        <div class="screen-optz w-full z-20 flex pt-8 lg:pt-40 flex-wrap">
+          <div class="w-full flex justify-center items-center flex-wrap content-center text-center py-4  ">
+            <div class="w-full text-accent text-3xl lg:text-7xl font-bold tracking-widest font-mono lg:my-10">TTF Bot
+            </div>
+            <div class="w-full text-netural text-xl lg:text-4xl font-semibold my-4  lg:my-6">Track the Funds</div>
+            <div class="w-full  flex justify-center items-center my-4 px-4" style="opacity: 1;"><video autoplay=""
+                class="rounded-lg h-full w-full lg:w-[calc(100%-10rem)]" controls="">
+                <source src="img/intro.mp4" type="video/mp4">
+              </video></div><button
+              class="btn btn-primary lg:btn-xl  hover:bg-secondary text-accent my-8 w-40 rounded-full "><a
+                href="https://ttf-bot.gitbook.io/track-the-funds-ttf-bot-1/" target="_blank">Whitepaper</a></button>
+          </div>
+        </div>
+      </section>
+      <section id="info" class=" bg-neutral relative flex justify-center flex-wrap"><svg class="w-full "
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="url(#myGradient)" fill-opacity="1"
+            d="M0,224L48,234.7C96,245,192,267,288,272C384,277,480,267,576,240C672,213,768,171,864,170.7C960,171,1056,213,1152,197.3C1248,181,1344,107,1392,69.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+          <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#24243e"></stop>
+            <stop offset="50%" stop-color="#2a355e"></stop>
+            <stop offset="100%" stop-color="#0f0c29"></stop>
+          </linearGradient>
+        </svg>
+        <div
+          class="screen-optz lg:-my-60   overflow-hidden w-full z-20 flex p-8 lg:py-16 justify-around lg:justify-between lg:flex-nowrap gap-12 flex-wrap ">
+          <div
+            class="w-full lg:h-[28rem] xl:h-[36rem] my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
+            style="opacity: 1; transform: none;">
+            <div style="transform: scale(0.7) translateZ(0px);"><svg stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 12 16" class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z">
+                </path>
+              </svg></div>
+            <div class="w-full text-center text-secondary font-bold xl:text-4xl text-2xl mb-2 xl:mb-6">Problem</div>
+            <div class="my-2 py-2  xl:text-xl text-lg text-netural">The most important thing to do when beginning to
+              invest in cryptocurrencies is to practice safe trading.</div>
+            <div class="my-2 py-2  xl:text-xl text-lg text-netural">Trading cryptocurrency is a risky business but has
+              the potential for high rewards.This attracts investors from all walks of life.But the reality is that only
+              a fraction of investors end up in profit.</div>
+          </div>
+          <div
+            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
+            style="opacity: 1; transform: none;">
+            <div style="transform: none;"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
+                class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 3C17.5915 3 22.2898 6.82432 23.6219 12C22.2898 17.1757 17.5915 21 12 21C6.40848 21 1.71018 17.1757 0.378052 12C1.71018 6.82432 6.40848 3 12 3ZM12 19C7.52443 19 3.73132 16.0581 2.45723 12C3.73132 7.94186 7.52443 5 12 5C16.4756 5 20.2687 7.94186 21.5428 12C20.2687 16.0581 16.4756 19 12 19Z"
+                  fill="currentColor"></path>
+              </svg></div>
+            <div class="w-full text-center text-secondary font-bold xl:text-4xl text-2xl mb-2 xl:mb-6">Vision</div>
+            <div class="my-2 py-2  xl:text-xl text-lg text-netural">To make trading safer by empowering the investors
+              with data to help select legitimate projects while avoiding scams.</div>
+            <div class="my-2 py-2  xl:text-xl text-lg text-netural">Assist project owners to provide transparency to
+              their community, so traders can have the confidence to buy or continue to hold.</div>
+          </div>
+          <div
+            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
+            style="opacity: 1; transform: none;">
+            <div style="transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 24 24" class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+              </svg></div>
+            <div class="w-full text-center text-secondary font-bold xl:text-4xl text-2xl mb-2 xl:mb-6"> Solution</div>
+            <div class="my-2 py-2 xl:text-xl  text-lg text-netural">A telegram bot that creates a report on the token
+              and monitors activity on the Blockchain.</div>
+            <div class="my-2 py-2  xl:text-xl text-lg text-netural">TTF Bot provides data for due diligence, tracks,
+              monitors and alerts blockchain activity, and allows founders to provide transparency.</div>
+          </div>
+        </div><svg class="w-full lg:-mt-[10rem] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="url(#myGradient)" fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,176C384,160,480,160,576,176C672,192,768,224,864,202.7C960,181,1056,107,1152,106.7C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+          <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#24243e"></stop>
+            <stop offset="50%" stop-color="#2a355e"></stop>
+            <stop offset="100%" stop-color="#0f0c29"></stop>
+          </linearGradient>
+        </svg>
+      </section>
+      <section id="utility" class="gradiant relative flex justify-center  ">
+        <div class="screen-optz overflow-hidden w-full z-20 flex flex-wrap justify-center px-8 lg:px-0 pt-16 lg:py-20">
+          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+            style="opacity: 0; transform: translateX(-50px) translateZ(0px);">Features &amp; Benefits</p>
+          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl "
+            style="opacity: 0; transform: translateX(-50px) translateZ(0px);">TTF Value</h1>
+          <div class="w-full lg:h-full lg:w-1/3 flex py-8 lg:px-10 flex-wrap">
+            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center"><img src="img/utility-1.png"
+                class="lg:-mt-16 h-148 w-76 lg:h-[43.32rem] lg:w-96  rounded-sm" style="opacity: 1; transform: none;">
+            </div>
+            <div class="lg:hidden w-full h-full lg:text-center " style="opacity: 1; transform: none;">
+              <div class="mb-10 font-semibold text-3xl text-accent mt-8">Token Reports</div>
+              <div class="my-4 text-xl font-medium">We recommend using TTF Bot to scan the token prior to purchasing any
+                BSC or ETH projects.</div>
+              <div class="text-xl  font-medium">You will receive information such as; is it a honeypot; can tokens be
+                minted, market-cap, liquidity, supply, wallet and transaction limits, buy and sell tax. It doesn't end
+                there, it will report balances in marketing and team wallets, airdrops, and top holders.</div>
+            </div>
+          </div>
+          <div class="hidden w-full lg:w-1/3 py-8 lg:flex lg:px-10 flex-wrap">
+            <div class="w-full lg:text-center " style="opacity: 1; transform: none;">
+              <div class="mb-10 font-semibold text-3xl text-accent">Token Reports</div>
+              <div class="my-4 text-xl font-medium">We recommend using TTF Bot to scan the token prior to purchasing any
+                BSC or ETH projects.</div>
+              <div class="text-xl  font-medium">You will receive information such as; is it a honeypot; can tokens be
+                minted, market-cap, liquidity, supply, wallet and transaction limits, buy and sell tax. It doesn't end
+                there, it will report balances in marketing and team wallets, airdrops, and top holders.</div>
+            </div>
+            <div class="w-full lg:text-center mt-8 " style="opacity: 1; transform: none;">
+              <div class="mb-10 font-semibold text-3xl text-accent">Charts &amp; Alerts</div>
+              <div class="my-4 text-xl font-medium">We recommend using TTF Bot to monitor Blockchain transactions.</div>
+              <div class="my-4 text-xl font-medium">You will be notified when; funds are moved out of the team wallets,
+                taxes are changed, limits changed, and tokens are bought or sold.</div>
+              <div class="text-xl  font-medium">Instant on demand charts are available at the touch of a button.</div>
+            </div>
+          </div>
+          <div class="w-full lg:h-full lg:w-1/3 flex py-8 lg:px-10 flex-wrap">
+            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center"><img src="img/utility-2.png"
+                class="lg:-mt-16 h-128 w-96 lg:h-[43.32rem] lg:w-96  rounded-sm" style="opacity: 1; transform: none;">
+            </div>
+            <div class="lg:hidden w-full h-full lg:text-center " style="opacity: 1; transform: none;">
+              <div class="mb-10 font-semibold text-3xl text-accent mt-8">Charts &amp; Alerts</div>
+              <div class="my-4 text-xl font-medium">We recommend using TTF Bot to monitor Blockchain transactions.</div>
+              <div class="my-4 text-xl font-medium">You will be notified when; funds are moved out of the team wallets,
+                taxes are changed, limits changed, and tokens are bought or sold.</div>
+              <div class="text-xl  font-medium">Instant on demand charts are available at the touch of a button.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="versions" class=" gradiant relative flex justify-center">
+        <div class="screen-optz lg:py-16 px-8 lg:px-4  w-full z-20 flex py-4 justify-center flex-wrap ">
+          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary" style="opacity: 1; transform:none">
+            What We Offer </p>
+          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 "
+            style="opacity: 1; transform: none;">Bot Versions</h1>
+          <div class="container flex gap-4  my-2 lg:flex-nowrap flex-wrap">
+            <div class=" w-full lg:w-1/3 bg-primary rounded-lg p-8 relative" style="opacity: 1;">
+              <h2 class="font-bold text-3xl text-accent my-2">FREE<span class="text-sm ml-4 text-gray-500">for
+                  Everyone</span></h2>
+              <div class="mt-8 h-64 flex flex-col justify-around ">
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Analysis Reports</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">On-demand Charts</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Fees Summary Report</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Tax Changes</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Max Trx's</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Team Funds</span>
+                </div>
+              </div><a href="https://t.me/ttfbotbot" target="_blank"
+                class="btn w-full bg-transparent text-accent border-accent mt-4">Get Access Now</a>
+            </div>
+            <div class=" w-full lg:w-1/3 bg-primary rounded-lg p-8 relative" style="opacity: 1;">
+              <h2 class="font-bold text-3xl text-accent my-2">PRO<span class="text-sm ml-4 text-gray-500">for
+                  Holders</span></h2>
+              <div class="mt-8 h-64 flex flex-col justify-around ">
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Everything in Free</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Liquidity</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Contracts</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Monitor Airdrops</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Buybacks, Burns, Sells</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">No Sponsored Ads</span>
+                </div>
+              </div><a href="https://app.uniswap.org/tokens/ethereum/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"
+                target="_blank" class="btn w-full bg-transparent text-accent border-accent mt-4">Hold 100K of TTF</a>
+            </div>
+            <div class=" w-full lg:w-1/3 bg-primary rounded-lg p-8 relative" style="opacity: 1;">
+              <h2 class="font-bold text-3xl text-accent my-2">PREMIUM<span class="text-sm ml-4 text-gray-500">for
+                  VIP</span></h2>
+              <div class="mt-8 h-64 flex flex-col justify-around ">
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Everything in Pro</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Labeled Callers</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Labeled Influencers</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Labeled Exchanges</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">TTF VIP Lounge</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Facilitate OTC Trades</span>
+                </div>
+              </div><a href="https://app.uniswap.org/tokens/ethereum/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"
+                target="_blank" class="btn w-full bg-transparent text-accent border-accent mt-4">Hold 500K of TTF</a>
+            </div>
+            <div class=" w-full lg:w-1/3 bg-primary rounded-lg p-8 relative" style="opacity: 1;">
+              <h2 class="font-bold text-3xl text-accent my-2">CUSTOM<span class="text-sm ml-4 text-gray-500">for
+                  Devs</span></h2>
+              <div class="mt-8 h-64 flex flex-col justify-around ">
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Everything in Pro</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">No Sponsored Ads</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Set a Default Token</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Pinned in TTF Channel</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Follow-up Pinned Post</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15"
+                      class="text-primary h-6 w-6 bg-success rounded-full" height="1em" width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                        fill="currentColor"></path>
+                    </svg></div><span class="ml-4">Buyback into Project</span>
+                </div>
+              </div><a href="https://t.me/dantek5" target="_blank"
+                class="btn w-full bg-transparent text-accent border-accent mt-4">Chat Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section id="tokenomics" class="gradiant relative flex justify-center flex-wrap">
+          <div class="screen-optz w-full z-20 flex p-8 justify-center lg:py-4 lg:pb-8 flex-wrap ">
+            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+              style="opacity: 1; transform: none;">Our Economic Value</p>
+            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
+              style="opacity: 1; transform: none;">Tokenomics</h1><span
+              class="p-2 text-3xl text-accent font-bold m-8 tracking-wide w-full text-center">Buy/Sell Fee</span>
+            <div class="w-full lg:w-1/2 p-4 h-96 lg:h-[30rem] flex justify-center items-center"><canvas role="img"
+                height="528" width="528" id="0"
+                style="display: block; box-sizing: border-box; height: 352px; width: 352px;"></canvas></div>
+            <div class="w-full lg:w-1/2 flex justify-center items-center flex-wrap content-center">
+              <div class="flex w-full items-center justify-center my-8 ">
+                <div class="w-5/12 flex justify-end pr-6">
+                  <div class="h-8 w-8 rounded-sm bg-[#1d4ed8]" style="height: 2rem;"></div>
+                </div>
+                <h4 class="w-7/12 h-full font-semibold text-accent text-2xl">Liquidity 1%</h4>
+              </div>
+              <div class="flex w-full items-center justify-center my-8 ">
+                <div class="w-5/12 flex justify-end pr-6">
+                  <div class="h-8 w-8 rounded-sm bg-[#65baff]" style="height: 2rem;"></div>
+                </div>
+                <h4 class="w-7/12 font-semibold text-accent text-2xl">Operations 2%</h4>
+              </div>
+              <div class="flex w-full items-center justify-center my-8 ">
+                <div class="w-5/12 flex justify-end pr-6">
+                  <div class="h-8 w-8 rounded-sm bg-[#0e2c68]" style="height: 0px;"></div>
+                </div>
+                <h4 class="w-7/12 font-semibold text-accent text-2xl">Marketing 2%</h4>
+              </div>
+              <h4 class="w-7/12 font-semibold text-accent text-2xl tracking-wider mt-8  ">Total Fee 5%</h4>
+            </div>
+            <section id="supply" class="w-full relative flex justify-center py-10 px-8">
+              <div class="stats block lg:inline-grid shadow-2xl bg-primary text-primary-content rounded-lg ">
+                <div class="stat">
+                  <div class="stat-title text-accent">Max Wallet</div>
+                  <div class="stat-value text-secondary"><span>2.00</span>%</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title text-accent">Total Supply</div>
+                  <div class="stat-value text-secondary"><span>100,000,000</span></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="audit" class="gradiant relative flex justify-center flex-wrap">
+          <div class="screen-optz w-full z-20 flex p-8 justify-center lg:py-4 lg:pb-8 flex-wrap ">
+            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+              style="opacity: 1; transform: none;">Safety &amp; Security</p>
+            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
+              style="opacity: 1; transform: none;">Audit Details</h1><a class="text-2xl font-bold text-accent"
+              target="_blank"
+              href="https://github.com/solidproof/projects/blob/main/2023/TTF%20Bot/SmartContract_Audit_Solidproof_TTF.pdf">Audit
+              and KYC by SolidProof</a>
+            <h4 class="text-xl mt-12 my-4">Security Score</h4>
+            <div class="flex gap-12 justify-center flex-wrap">
+              <div class="w-full lg:w-[25rem] bg-secondary rounded-3xl ">
+                <div class="flex items-center w-fit p-1 px-2 rounded-full mt-4 mx-4 border border-accent"><svg
+                    stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="mr-2"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z">
+                    </path>
+                    <path
+                      d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z">
+                    </path>
+                  </svg>
+                  <div>October 5, 2023</div>
+                </div>
+                <div class="flex justify-center items-center mb-16 mt-4 mx-4 ">
+                  <div class="h-40 w-40 bg-accent rounded-full p-1 relative"><img
+                      class="h-full w-full border-secondary border-8 rounded-full " src="img/logo.gif"><span
+                      class="h-8 w-8 p-1.5 -bottom-2  right-0 mx-auto left-0 bg-yellow-400 absolute rounded-full flex justify-center items-center text-accent"><svg
+                        stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                        class="h-full w-full" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <title></title>
+                        <path
+                          d="M16.624 13.9202l2.7175 2.7154-7.353 7.353-7.353-7.352 2.7175-2.7164 4.6355 4.6595 4.6356-4.6595zm4.6366-4.6366L24 12l-2.7154 2.7164L18.5682 12l2.6924-2.7164zm-9.272.001l2.7163 2.6914-2.7164 2.7174v-.001L9.2721 12l2.7164-2.7154zm-9.2722-.001L5.4088 12l-2.6914 2.6924L0 12l2.7164-2.7164zM11.9885.0115l7.353 7.329-2.7174 2.7154-4.6356-4.6356-4.6355 4.6595-2.7174-2.7154 7.353-7.353z">
+                        </path>
+                      </svg></span></div>
+                </div>
+                <div class="h-[20rem] bg-neutral rounded-[2rem] flex flex-col items-center justify-around ">
+                  <div class="text-3xl text-gray-400 ">
+                    <h2>Score:</h2>
+                    <h2>98</h2>
+                  </div>
+                  <h3 class="text-black font-bold text-3xl">TTF</h3><a class="btn btn-secondary w-36" target="_blank"
+                    href="https://github.com/solidproof/projects/blob/main/2023/TTF%20Bot/SmartContract_Audit_Solidproof_TTF.pdf">View</a>
+                </div>
+              </div>
+              <div class="w-full lg:w-[25rem] flex flex-col justify-between">
+                <div class="flex justify-between text-2xl font-medium text-black">
+                  <div>Total</div>
+                  <div>0</div>
+                </div>
+                <div class="flex justify-between text-2xl font-medium text-error">
+                  <div>Critical</div>
+                  <div>0</div>
+                </div>
+                <div class="flex justify-between text-2xl font-medium text-warning">
+                  <div>Medium</div>
+                  <div>0</div>
+                </div>
+                <div class="flex justify-between text-2xl font-medium text-yellow-200">
+                  <div>Minor</div>
+                  <div>0</div>
+                </div>
+                <div class="flex justify-between text-2xl font-medium text-secondary">
+                  <div>Informational</div>
+                  <div>1</div>
+                </div>
+                <div class=""><canvas role="img" height="600" width="600" id="1"
+                    style="display: block; box-sizing: border-box; height: 400px; width: 400px;"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="supps" class="bg-accent  relative flex justify-center">
+        <div class="screen-optz w-full z-20 flex py-4 justify-center lg:justify-between flex-wrap ">
+          <div class="w-full text-secondary text-center text-xl lg:text-3xl font-bold tracking-wider mb-8">Buy TTF Token
+            or view chart on your preferred platform</div>
+          <div class="w-1/2 lg:w-1/6 flex justify-center items-center "><a
+              href="https://app.uniswap.org/tokens/ethereum/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"><img
+                src="img/uniswap.png" class="h-24"></a></div>
+          <div class="w-1/2 lg:w-1/6 flex justify-center items-center "><a
+              href="https://dexscreener.com/ethereum/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"><img
+                src="img/dexscreener1.png" class="h-28"></a></div>
+          <div class="w-7/12 lg:w-1/6 p-4 lg:p-0 flex justify-center items-center "><img src="img/home-text.gif"></div>
+          <div class="w-1/2 lg:w-1/6  flex justify-center items-center "><a
+              href="https://www.dexview.com/eth/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"><img src="img/dexview.png"
+                class="h-24"></a></div>
+          <div class="w-1/2 lg:w-1/6  flex justify-center items-center "><a
+              href="https://www.dextools.io/app/en/ether/pair-explorer/0x8e32b8a41f2e86a3ee198912ac8d756c84295b40"><img
+                src="img/dextools.png" class="h-24"></a></div>
+        </div>
+      </section>
+      <section id="roadmap" class="gradiant relative flex justify-center">
+        <div class="screen-optz w-full z-20 flex py-4 pb-20 px-8 lg:px-0 justify-center flex-wrap ">
+          <div class="container mx-auto w-full h-full text-center">
+            <div class="text-left my-8 ">
+              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+                style="opacity: 1; transform: none;">Our Detailed Plan </p>
+              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
+                style="opacity: 1; transform: none;">TTF Roadmap</h1>
+            </div><span class="p-2 text-3xl text-accent font-bold text-center">Roadmap</span>
+            <div class="relative flex flex-wrap py-8 lg:p-8 h-full">
+              <div class="border-2-2 absolute border-opacity-20 text-primary h-[calc(100%-6.5rem)]  border left-1/2"
+                style="height: 80%;"></div>
+              <div class="lg:w-5/12 "></div>
+              <div class="lg:w-2/12 hidden relative lg:flex justify-center items-center">
+                <div
+                  class="z-20 flex justify-center items-center gradiant order-1  border-accent border-2 shadow-xl w-8 h-8 rounded-full">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">1</h1>
+                </div>
+                <div class="border-2-2 absolute border-opacity-20 text-accent w-full border left-1/2"
+                  style="width: 0%;"></div>
+              </div>
+              <div class="mb-8 justify-between items-center w-full lg:w-5/12 relative " style="opacity: 1;">
+                <div
+                  class="z-20 flex lg:hidden items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full border-2 border-accent absolute -top-4 -left-4">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">1</h1>
+                </div>
+                <div
+                  class="order-1 lg:h-[25rem] lg:items-center flex flex-wrap gradiant border-2 border-accent text-accent rounded-lg shadow-xl w-full px-6 py-4 text-center">
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Project Conception</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Contact Deployment</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Token</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Website</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Create Socials</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Release Whitepaper</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Onboard Mods</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Beta Test TTF Bot</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Release TTF Bot</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Organic Growth</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-8 justify-between items-center w-full lg:w-5/12 relative" style="opacity: 1;">
+                <div
+                  class="z-20 flex lg:hidden items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full border-2 border-accent absolute -top-4 -left-4">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">2</h1>
+                </div>
+                <div
+                  class="order-2 lg:h-[25rem] lg:items-center flex flex-wrap  gradiant border-2 border-accent text-accent rounded-lg shadow-xl w-full px-6 py-4 text-center">
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">AMA
+                      Marketing</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">KYC
+                      Certificate</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Contract Audit</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      List on Token sites</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Etherscan Update</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Custom</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch TTF Pro</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Monetize TTF Bot</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="bg-success text-primary rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Telegram Marketing</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Partnership Marketing</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Banners Marketing</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Influencers Marketing</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-2/12 hidden relative lg:flex  justify-center items-center overflow-hidden">
+                <div
+                  class="z-20 flex justify-center items-center gradiant order-1  border-accent border-2 shadow-xl w-8 h-8 rounded-full">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">2</h1>
+                </div>
+                <div class="border-2-2 absolute border-opacity-20 text-accent w-full border right-1/2"
+                  style="width: 50%;"></div>
+              </div>
+              <div class="lg:w-5/12 "></div>
+              <div class="lg:w-5/12 "></div>
+              <div class="lg:w-2/12 hidden relative lg:flex  justify-center items-center">
+                <div
+                  class="z-20 flex justify-center items-center gradiant order-1  border-accent border-2 shadow-xl w-8 h-8 rounded-full">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">3</h1>
+                </div>
+                <div class="border-2-2 absolute border-opacity-20 text-accent w-full border left-1/2"
+                  style="width: 50%;"></div>
+              </div>
+              <div class="mb-16 justify-between items-center w-full lg:w-5/12 relative" style="opacity: 1;">
+                <div
+                  class="z-20 flex lg:hidden items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full border-2 border-accent absolute -top-4 -left-4">
+                  <h1 class="mx-auto font-semibold text-lg text-accent ">3</h1>
+                </div>
+                <div
+                  class="order-3 lg:h-[25rem] lg:items-center flex flex-wrap  gradiant border-2 border-accent text-accent rounded-lg shadow-xl w-full px-6 py-4 text-center">
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch TTF Premium</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Billboards Marketing</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Arbitrum</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch TTF for Discord</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      List on CoinGecko</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      List On CoinMarketCap</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Portfolio Bot</h4>
+                  </div>
+                  <div class="flex w-full my-1 lg:my-0">
+                    <div class="rounded-full w-2/12 lg:w-3/12 flex justify-end items-center"><svg stroke="currentColor"
+                        fill="none" stroke-width="0" viewBox="0 0 15 15"
+                        class="text-success rounded-full text-primary h-6 w-6" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                    <h4 class="w-10/12 lg:w-9/12 text-md lg:text-xl font-medium flex justify-left ml-4 items-center">
+                      Launch Utility NFT's</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="bg-accent relative flex justify-center flex-wrap">
+        <div class="screen-optz w-full px-10 pt-20">
+          <div class="container">
+            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+              style="opacity: 1; transform: none;">The Hard Working Members </p>
+            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-primary sm:text-4xl mb-8 "
+              style="opacity: 1; transform: none;">TTF Team</h1>
+            <h1 class="text-lg text-black max-w-4xl pb-6 sm:w-4/6 w-5/6">We are an international team of 3 from Canada,
+              Egypt, and Australia, with a diversified skill set from development, marketing, and business management.
+              We share a common vision about safer trading, and have come together to help traders with their due
+              diligence and help founders to provide transparency.</h1>
+          </div>
+          <div class="container mx-auto my-16">
+            <div class="flex flex-wrap  justify-around">
+              <div class="xl:w-1/5 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded-lg overflow-hidden shadow-md  shadow-primary  bg-primary">
+                  <div class="absolute -mt-20 w-full flex justify-center"><svg
+                      class="z-50 h-[calc(100%+2rem)] w-full absolute -bottom-4 left-0" viewBox="0 0 110 110">
+                      <circle class="z-50" cx="55" cy="55" r="45" fill="transparent" stroke="#435ebe" stroke-width="3"
+                        pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle>
+                    </svg>
+                    <div class="h-32 w-32 "><img src="img/don.jpg"
+                        class="rounded-full object-cover h-full w-full shadow-md "></div>
+                  </div>
+                  <div class="px-6 mt-16 h-48 flex justify-around flex-wrap">
+                    <div class="text-accent font-bold text-3xl text-center pb-1 w-full">Don</div>
+                    <p class="text-secondary text-sm text-center  w-full" style="opacity: 1; transform: none;">CEO &amp;
+                      Project Manager</p>
+                    <div class="w-full flex justify-center pt-5 pb-5"><a href="https://t.me/DON_the_only" class="mx-5"
+                        style="opacity: 1; transform: none;"><svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 16 16" class="h-8 w-8 text-accent" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z">
+                          </path>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="xl:w-1/5 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded-lg overflow-hidden shadow-md  shadow-primary  bg-primary">
+                  <div class="absolute -mt-20 w-full flex justify-center"><svg
+                      class="z-50 h-[calc(100%+2rem)] w-full absolute -bottom-4 left-0" viewBox="0 0 110 110">
+                      <circle class="z-50" cx="55" cy="55" r="45" fill="transparent" stroke="#435ebe" stroke-width="3"
+                        pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle>
+                    </svg>
+                    <div class="h-32 w-32 "><img src="img/dan.jpg"
+                        class="rounded-full object-cover h-full w-full shadow-md "></div>
+                  </div>
+                  <div class="px-6 mt-16 h-48 flex justify-around flex-wrap">
+                    <div class="text-accent font-bold text-3xl text-center pb-1 w-full">Dan</div>
+                    <p class="text-secondary text-sm text-center  w-full" style="opacity: 1; transform: none;">CMO &amp;
+                      Strategic Advisor</p>
+                    <div class="w-full flex justify-center pt-5 pb-5"><a href="https://t.me/dantek5" class="mx-5"
+                        style="opacity: 1; transform: none;"><svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 16 16" class="h-8 w-8 text-accent" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z">
+                          </path>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="xl:w-1/5 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded-lg overflow-hidden shadow-md  shadow-primary  bg-primary">
+                  <div class="absolute -mt-20 w-full flex justify-center"><svg
+                      class="z-50 h-[calc(100%+2rem)] w-full absolute -bottom-4 left-0" viewBox="0 0 110 110">
+                      <circle class="z-50" cx="55" cy="55" r="45" fill="transparent" stroke="#435ebe" stroke-width="3"
+                        pathLength="1" stroke-dashoffset="0px" stroke-dasharray="0px 1px"></circle>
+                    </svg>
+                    <div class="h-32 w-32 "><img src="img/b1q.jpg"
+                        class="rounded-full object-cover h-full w-full shadow-md "></div>
+                  </div>
+                  <div class="px-6 mt-16 h-48 flex justify-around flex-wrap">
+                    <div class="text-accent font-bold text-3xl text-center pb-1 w-full">Muhammad</div>
+                    <p class="text-secondary text-sm text-center  w-full" style="opacity: 1; transform: none;">CTO &amp;
+                      Senior Developer</p>
+                    <div class="w-full flex justify-center pt-5 pb-5"><a href="https://t.me/hosnybtw" class="mx-5"
+                        style="opacity: 1; transform: none;"><svg stroke="currentColor" fill="currentColor"
+                          stroke-width="0" viewBox="0 0 16 16" class="h-8 w-8 text-accent" height="1em" width="1em"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z">
+                          </path>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="gradiant relative flex justify-center">
+        <div class="relative w-full isolate flex justify-center items-center  overflow-hidden  ">
+          <div class="screen-optz w-full z-20 flex p-8 lg:px-0">
+            <div class="w-full flex justify-center items-center flex-wrap content-center">
+              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+                style="opacity: 1; transform: none;">Introduction</p>
+              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 "
+                style="opacity: 1; transform: none;">About TTF</h1>
+              <div class="w-full flex flex-wrap py-8 lg:p-8 pt-0 text-lg  text-netural lg:text-xl ">
+                <div class="w-full" style="opacity: 1; transform: none;">
+                  <div class="mb-8">We are going to share with you a truly inspiring story of how our team of
+                    individuals came together to fight back against scammers in the cryptocurrency market.</div>
+                  <div class="mb-8">As many of you know, the cryptocurrency market has been plagued by scams and
+                    fraudulent activities, which have caused significant financial losses and undermined trust in the
+                    market. Unfortunately, our team fell victim to one of these scams, losing a significant amount of
+                    money in the process. Each team member of this project has been a victim on multiple occasions, and
+                    we're sure all of you can relate. From the ashes of a project where we were victims, we all started
+                    chatting. We realized we had similar values and principles.</div>
+                  <div class="mb-8">So instead of giving up and walking away, we decided to take action. We gathered our
+                    skills, knowledge, and experience and began working on a solution that would help protect others
+                    from the same fate. And that's how the idea for our TTF BOT was born. We researched the types of
+                    scams that exist and how we can try to identify them. The Blockchain is available to all, but not
+                    all know how to use it effectively. And even if you knew how to use it, you certainly can't monitor
+                    it 24/7.</div>
+                </div>
+              </div>
+              <div class="bg-primary rounded-lg shadow-lg p-8 text-lg   text-netural lg:text-xl  ">
+                <div class="w-full" style="opacity: 1; transform: none;">
+                  <div class="mb-8">Our team worked tirelessly to create an advanced tool that could monitor the
+                    cryptocurrency market and detect suspicious activities and potential scams. We poured our hearts and
+                    souls into this project, determined to make a difference and prevent others from falling victim to
+                    these scams. This project was not born yesterday; we were strategizing and in development for over 2
+                    months prior to launching the TTF Token. We like to think, this is a well thought out project which
+                    actually will have a positive impact in the cryptocurrency space.</div>
+                  <div class="mb-8">We faced countless setbacks, challenges, and obstacles along the way. But we
+                    persevered, driven by a shared vision of a better future and a determination to succeed. These bumps
+                    are expected when we are doing something novel, never been done in crypto before!</div>
+                  <div class="mb-8">Today, We are proud to say that our BOT has become a powerful tool in the fight
+                    against crypto scams. It will help countless investors avoid fraudulent activities and make informed
+                    decisions about their investments. We believe we can create a safer and more transparent market,
+                    where everyone can participate with confidence and trust. Our team's dedication and hard work have
+                    paid off, and we are hoping to make a real difference in the cryptocurrency market. And we are here
+                    to stay! The fight against scammers is ongoing, and much work still needs to be done. But this is
+                    one positive step in the fight against them.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer items-center p-4 bg-primary text-netural">
+        <div class="items-center grid-flow-col"><img src="img/logo-side.png"
+            class="h-12 w-12 bg-primary rounded-full p-1 pt-1.5 ">
+          <p>Copyright © 2023 - All right reserved for TrackTheFunds Bot</p>
+        </div>
+        <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-2xl"><a
+            href="https://t.me/TTFBotOfficial" target="_blank"><svg stroke="currentColor" fill="currentColor"
+              stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z">
+              </path>
+            </svg></a><a href="https://twitter.com/TTFBot"><svg stroke="currentColor" fill="currentColor"
+              stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+              </path>
+            </svg></a><a
+            href="https://medium.com/@track.the.funds.bot/track-the-funds-ttf-bot-making-cryptocurrency-trading-safer-39d152cde756"><svg
+              stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M448.61 225.62c26.87.18 35.57-7.43 38.92-12.37 12.47-16.32-7.06-47.6-52.85-71.33 17.76-33.58 30.11-63.68 36.34-85.3 3.38-11.83 1.09-19 .45-20.25-1.72 10.52-15.85 48.46-48.2 100.05-25-11.22-56.52-20.1-93.77-23.8-8.94-16.94-34.88-63.86-60.48-88.93C252.18 7.14 238.7 1.07 228.18.22h-.05c-13.83-1.55-22.67 5.85-27.4 11-17.2 18.53-24.33 48.87-25 84.07-7.24-12.35-17.17-24.63-28.5-25.93h-.18c-20.66-3.48-38.39 29.22-36 81.29-38.36 1.38-71 5.75-93 11.23-9.9 2.45-16.22 7.27-17.76 9.72 1-.38 22.4-9.22 111.56-9.22 5.22 53 29.75 101.82 26 93.19-9.73 15.4-38.24 62.36-47.31 97.7-5.87 22.88-4.37 37.61.15 47.14 5.57 12.75 16.41 16.72 23.2 18.26 25 5.71 55.38-3.63 86.7-21.14-7.53 12.84-13.9 28.51-9.06 39.34 7.31 19.65 44.49 18.66 88.44-9.45 20.18 32.18 40.07 57.94 55.7 74.12a39.79 39.79 0 0 0 8.75 7.09c5.14 3.21 8.58 3.37 8.58 3.37-8.24-6.75-34-38-62.54-91.78 22.22-16 45.65-38.87 67.47-69.27 122.82 4.6 143.29-24.76 148-31.64 14.67-19.88 3.43-57.44-57.32-93.69zm-77.85 106.22c23.81-37.71 30.34-67.77 29.45-92.33 27.86 17.57 47.18 37.58 49.06 58.83 1.14 12.93-8.1 29.12-78.51 33.5zM216.9 387.69c9.76-6.23 19.53-13.12 29.2-20.49 6.68 13.33 13.6 26.1 20.6 38.19-40.6 21.86-68.84 12.76-49.8-17.7zm215-171.35c-10.29-5.34-21.16-10.34-32.38-15.05a722.459 722.459 0 0 0 22.74-36.9c39.06 24.1 45.9 53.18 9.64 51.95zM279.18 398c-5.51-11.35-11-23.5-16.5-36.44 43.25 1.27 62.42-18.73 63.28-20.41 0 .07-25 15.64-62.53 12.25a718.78 718.78 0 0 0 85.06-84q13.06-15.31 24.93-31.11c-.36-.29-1.54-3-16.51-12-51.7 60.27-102.34 98-132.75 115.92-20.59-11.18-40.84-31.78-55.71-61.49-20-39.92-30-82.39-31.57-116.07 12.3.91 25.27 2.17 38.85 3.88-22.29 36.8-14.39 63-13.47 64.23 0-.07-.95-29.17 20.14-59.57a695.23 695.23 0 0 0 44.67 152.84c.93-.38 1.84.88 18.67-8.25-26.33-74.47-33.76-138.17-34-173.43 20-12.42 48.18-19.8 81.63-17.81 44.57 2.67 86.36 15.25 116.32 30.71q-10.69 15.66-23.33 32.47C365.63 152 339.1 145.84 337.5 146c.11 0 25.9 14.07 41.52 47.22a717.63 717.63 0 0 0-115.34-31.71 646.608 646.608 0 0 0-39.39-6.05c-.07.45-1.81 1.85-2.16 20.33C300 190.28 358.78 215.68 389.36 233c.74 23.55-6.95 51.61-25.41 79.57-24.6 37.31-56.39 67.23-84.77 85.43zm27.4-287c-44.56-1.66-73.58 7.43-94.69 20.67 2-52.3 21.31-76.38 38.21-75.28C267 52.15 305 108.55 306.58 111zm-130.65 3.1c.48 12.11 1.59 24.62 3.21 37.28-14.55-.85-28.74-1.25-42.4-1.26-.08 3.24-.12-51 24.67-49.59h.09c5.76 1.09 10.63 6.88 14.43 13.57zm-28.06 162c20.76 39.7 43.3 60.57 65.25 72.31-46.79 24.76-77.53 20-84.92 4.51-.2-.21-11.13-15.3 19.67-76.81zm210.06 74.8">
+              </path>
+            </svg></a></div>
+      </footer>
+    </main>
+  </div>
+
+
+</body>
+
+</html>

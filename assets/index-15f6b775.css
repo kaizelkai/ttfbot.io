@@ -2887,7 +2887,7 @@ html {
     scroll-behavior: smooth
 }
 
-.gradiant {
+.gradiant, #loader {
     background: #0f0c29;
     background: linear-gradient(to right, #24243e, #2a355e, #0f0c29);
     background-attachment: fixed

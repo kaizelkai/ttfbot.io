@@ -48,6 +48,22 @@
   <!-- BR Group Smart Analytics -->
 
   <style>
+    .text-error {
+      color: #ff5c5c; /* Rouge pour Critical */
+    }
+
+    .text-warning {
+      color: #ffcc00; /* Jaune pour Medium */
+    }
+
+    .text-yellow-200 {
+      color: #f5d142; /* Couleur plus douce pour Minor */
+    }
+
+    .text-secondary {
+      color: #4a90e2; /* Bleu pour Informational */
+    }
+
     @keyframes slide-in-one-tap {
       from {
         transform: translateY(80px);
@@ -226,6 +242,91 @@
       font-weight: 600;
       font-style: normal;
     }
+  
+.chart-container {
+  width: 50%; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myChart {
+  max-width: 300px; /* Adjust as needed */
+  max-height: 300px;
+}
+
+.legend-container {
+  width: 50%; /* Adjust as needed */
+  padding: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.legend-label {
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+}
+.total-fee{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+    width: 100%;
+}
+
+.hidden-animation {
+  opacity: 0;
+  transform: translateX(-5%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible-animation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hidden-animation2 {
+  opacity: 0;
+  transform: translateY(5%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible-animation2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hidden-animation3 {
+  opacity: 0;
+  transform: translateX(5%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible-animation3 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hidden-animation4 {
+  opacity: 0;
+  transform: translateY(-5%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
   </style>
 </head>
 
@@ -239,11 +340,11 @@
                 src="img/logo.gif"></div>
             <div class="navbar-center bg-primary rounded-full w-8/12 hidden lg:flex text-texter justify-center">
               <ul class="menu menu-horizontal px-1 py-2 w-full flex justify-around"><a
-                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms] " href="home">Home</a><a
-                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Utility</a><a
-                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Versions</a><a
-                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Tokenomics</a><a
-                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Audit</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms] " href="#home">Home</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#utility">Utility</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#versions">Versions</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#tokenomics">Tokenomics</a><a
+                  class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#audit">Audit</a><a
                   class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#roadmap">Roadmap</a><a
                   class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#team">Team</a><a
                   class="uppercase py-2 font-bold  text-accent font-sans cursor-pointer text-sm tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#about">About</a>
@@ -259,12 +360,11 @@
                 <ul tabindex="0"
                   class="menu menu-compact dropdown-content top-10 -left-[10rem] mt-3 p-4 shadow bg-primary rounded-lg w-52">
                   <a
-                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]  border-accent" href="">Home</a><a
-                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Utility</a><a
-                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]"href="">Versions</a><a
-                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="">Tokenomics</a><a
-                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" >Audit</a><a
-                    href="#roadmap"
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]  border-accent" href="#home">Home</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#utility">Utility</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]"href="#versions">Versions</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#tokenomics">Tokenomics</a><a
+                    class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#audit">Audit</a><a
                     class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#roadmap">Roadmap</a><a
                     class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#team">Team</a><a
                     class="uppercase py-4 font-bold  text-accent font-sans cursor-pointer text-md tracking-widest border-b-2 border-transparent hover:border-accent transition-colors duration-[600ms]" href="#about">About</a><button
@@ -306,9 +406,9 @@
         </svg>
         <div
           class="screen-optz lg:-my-60   overflow-hidden w-full z-20 flex p-8 lg:py-16 justify-around lg:justify-between lg:flex-nowrap gap-12 flex-wrap ">
+          
           <div
-            class="w-full lg:h-[28rem] xl:h-[36rem] my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
-            style="opacity: 1; transform: none;">
+            class="w-full lg:h-[28rem] xl:h-[36rem] my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl hidden-animation bvvg">
             <div style="transform: scale(0.7) translateZ(0px);"><svg stroke="currentColor" fill="currentColor"
                 stroke-width="0" viewBox="0 0 12 16" class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em"
                 width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -323,9 +423,9 @@
               the potential for high rewards.This attracts investors from all walks of life.But the reality is that only
               a fraction of investors end up in profit.</div>
           </div>
+
           <div
-            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
-            style="opacity: 1; transform: none;">
+            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl hidden-animation2 bvvg2">
             <div style="transform: none;"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
                 class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
@@ -343,8 +443,7 @@
               their community, so traders can have the confidence to buy or continue to hold.</div>
           </div>
           <div
-            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl "
-            style="opacity: 1; transform: none;">
+            class="w-full lg:h-[28rem] xl:h-[36rem]  my-4 lg:w-1/3 p-4 flex justify-center flex-wrap content-start  bg-primary rounded-xl hidden-animation3 bvvg3">
             <div style="transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                 viewBox="0 0 24 24" class="text-secondary xl:h-24 xl:w-24 h-16 w-16" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
@@ -357,7 +456,8 @@
             <div class="my-2 py-2  xl:text-xl text-lg text-netural">TTF Bot provides data for due diligence, tracks,
               monitors and alerts blockchain activity, and allows founders to provide transparency.</div>
           </div>
-        </div><svg class="w-full lg:-mt-[10rem] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        </div>
+        <svg class="w-full lg:-mt-[10rem] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="url(#myGradient)" fill-opacity="1"
             d="M0,256L48,240C96,224,192,192,288,176C384,160,480,160,576,176C672,192,768,224,864,202.7C960,181,1056,107,1152,106.7C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
           </path>
@@ -370,15 +470,13 @@
       </section>
       <section id="utility" class="gradiant relative flex justify-center  ">
         <div class="screen-optz overflow-hidden w-full z-20 flex flex-wrap justify-center px-8 lg:px-0 pt-16 lg:py-20">
-          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-            style="opacity: 0; transform: translateX(-50px) translateZ(0px);">Features &amp; Benefits</p>
-          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl "
-            style="opacity: 0; transform: translateX(-50px) translateZ(0px);">TTF Value</h1>
+          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary hidden-animation bvvg4">Features &amp; Benefits</p>
+          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl hidden-animation bvvg5">TTF Value</h1>
           <div class="w-full lg:h-full lg:w-1/3 flex py-8 lg:px-10 flex-wrap">
-            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center"><img src="img/utility-1.png"
+            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center hidden-animation bvvg6"><img src="img/utility-1.png"
                 class="lg:-mt-16 h-148 w-76 lg:h-[43.32rem] lg:w-96  rounded-sm" style="opacity: 1; transform: none;">
             </div>
-            <div class="lg:hidden w-full h-full lg:text-center " style="opacity: 1; transform: none;">
+            <div class="lg:hidden w-full h-full lg:text-center hidden-animation bvvg7">
               <div class="mb-10 font-semibold text-3xl text-accent mt-8">Token Reports</div>
               <div class="my-4 text-xl font-medium">We recommend using TTF Bot to scan the token prior to purchasing any
                 BSC or ETH projects.</div>
@@ -387,7 +485,7 @@
                 there, it will report balances in marketing and team wallets, airdrops, and top holders.</div>
             </div>
           </div>
-          <div class="hidden w-full lg:w-1/3 py-8 lg:flex lg:px-10 flex-wrap">
+          <div class="hidden w-full lg:w-1/3 py-8 lg:flex lg:px-10 flex-wrap hidden-animation bvvg8">
             <div class="w-full lg:text-center " style="opacity: 1; transform: none;">
               <div class="mb-10 font-semibold text-3xl text-accent">Token Reports</div>
               <div class="my-4 text-xl font-medium">We recommend using TTF Bot to scan the token prior to purchasing any
@@ -405,10 +503,10 @@
             </div>
           </div>
           <div class="w-full lg:h-full lg:w-1/3 flex py-8 lg:px-10 flex-wrap">
-            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center"><img src="img/utility-2.png"
+            <div class="w-full flex justify-center lg:my-8 lg:h-full lg:items-center hidden-animation bvvg9"><img src="img/utility-2.png"
                 class="lg:-mt-16 h-128 w-96 lg:h-[43.32rem] lg:w-96  rounded-sm" style="opacity: 1; transform: none;">
             </div>
-            <div class="lg:hidden w-full h-full lg:text-center " style="opacity: 1; transform: none;">
+            <div class="lg:hidden w-full h-full lg:text-center hidden-animation bvvg10">
               <div class="mb-10 font-semibold text-3xl text-accent mt-8">Charts &amp; Alerts</div>
               <div class="my-4 text-xl font-medium">We recommend using TTF Bot to monitor Blockchain transactions.</div>
               <div class="my-4 text-xl font-medium">You will be notified when; funds are moved out of the team wallets,
@@ -420,10 +518,9 @@
       </section>
       <section id="versions" class=" gradiant relative flex justify-center">
         <div class="screen-optz lg:py-16 px-8 lg:px-4  w-full z-20 flex py-4 justify-center flex-wrap ">
-          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary" style="opacity: 1; transform:none">
+          <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary hidden-animation bvvg11" >
             What We Offer </p>
-          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 "
-            style="opacity: 1; transform: none;">Bot Versions</h1>
+          <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 hidden-animation bvvg12">Bot Versions</h1>
           <div class="container flex gap-4  my-2 lg:flex-nowrap flex-wrap">
             <div class=" w-full lg:w-1/3 bg-primary rounded-lg p-8 relative" style="opacity: 1;">
               <h2 class="font-bold text-3xl text-accent my-2">FREE<span class="text-sm ml-4 text-gray-500">for
@@ -675,13 +772,14 @@
       <section>
         <section id="tokenomics" class="gradiant relative flex justify-center flex-wrap">
           <div class="screen-optz w-full z-20 flex p-8 justify-center lg:py-4 lg:pb-8 flex-wrap ">
-            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-              style="opacity: 1; transform: none;">Our Economic Value</p>
-            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
-              style="opacity: 1; transform: none;">Tokenomics</h1><span
+            <div class="w-full  hidden-animation bvvg13">
+              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary">Our Economic Value</p>
+              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16">Tokenomics</h1>
+            </div>
+            <span
               class="p-2 text-3xl text-accent font-bold m-8 tracking-wide w-full text-center">Buy/Sell Fee</span>
             <div class="w-full lg:w-1/2 p-4 h-96 lg:h-[30rem] flex justify-center items-center"><canvas role="img"
-                height="528" width="528" id="0"
+                height="528" width="528" id="myChart2"
                 style="display: block; box-sizing: border-box; height: 352px; width: 352px;"></canvas></div>
             <div class="w-full lg:w-1/2 flex justify-center items-center flex-wrap content-center">
               <div class="flex w-full items-center justify-center my-8 ">
@@ -720,10 +818,8 @@
         </section>
         <section id="audit" class="gradiant relative flex justify-center flex-wrap">
           <div class="screen-optz w-full z-20 flex p-8 justify-center lg:py-4 lg:pb-8 flex-wrap ">
-            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-              style="opacity: 1; transform: none;">Safety &amp; Security</p>
-            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
-              style="opacity: 1; transform: none;">Audit Details</h1><a class="text-2xl font-bold text-accent"
+            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary hidden-animation bvvg14">Safety &amp; Security</p>
+            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 hidden-animation bvvg15">Audit Details</h1><a class="text-2xl font-bold text-accent"
               target="_blank"
               href="https://github.com/solidproof/projects/blob/main/2023/TTF%20Bot/SmartContract_Audit_Solidproof_TTF.pdf">Audit
               and KYC by SolidProof</a>
@@ -766,27 +862,29 @@
               <div class="w-full lg:w-[25rem] flex flex-col justify-between">
                 <div class="flex justify-between text-2xl font-medium text-black">
                   <div>Total</div>
-                  <div>0</div>
+                  <div id="total">1</div>
                 </div>
                 <div class="flex justify-between text-2xl font-medium text-error">
                   <div>Critical</div>
-                  <div>0</div>
+                  <div id="critical">0</div>
                 </div>
                 <div class="flex justify-between text-2xl font-medium text-warning">
                   <div>Medium</div>
-                  <div>0</div>
+                  <div id="medium">0</div>
                 </div>
                 <div class="flex justify-between text-2xl font-medium text-yellow-200">
                   <div>Minor</div>
-                  <div>0</div>
+                  <div id="minor">0</div>
                 </div>
                 <div class="flex justify-between text-2xl font-medium text-secondary">
                   <div>Informational</div>
-                  <div>1</div>
+                  <div id="informational">1</div>
                 </div>
-                <div class=""><canvas role="img" height="600" width="600" id="1"
-                    style="display: block; box-sizing: border-box; height: 400px; width: 400px;"></canvas></div>
+                <div class="">
+                  <canvas id="myChart" width="600" height="600"></canvas>
+                </div>
               </div>
+              
             </div>
           </div>
         </section>
@@ -813,9 +911,8 @@
       <section id="roadmap" class="gradiant relative flex justify-center">
         <div class="screen-optz w-full z-20 flex py-4 pb-20 px-8 lg:px-0 justify-center flex-wrap ">
           <div class="container mx-auto w-full h-full text-center">
-            <div class="text-left my-8 ">
-              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-                style="opacity: 1; transform: none;">Our Detailed Plan </p>
+            <div class="text-left my-8 hidden-animation bvvg16">
+              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary ">Our Detailed Plan </p>
               <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-16 "
                 style="opacity: 1; transform: none;">TTF Roadmap</h1>
             </div><span class="p-2 text-3xl text-accent font-bold text-center">Roadmap</span>
@@ -1243,10 +1340,13 @@
       <section id="team" class="bg-accent relative flex justify-center flex-wrap">
         <div class="screen-optz w-full px-10 pt-20">
           <div class="container">
-            <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-              style="opacity: 1; transform: none;">The Hard Working Members </p>
-            <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-primary sm:text-4xl mb-8 "
-              style="opacity: 1; transform: none;">TTF Team</h1>
+            
+              <div class="w-full  hidden-animation bvvg17">
+                <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
+                >The Hard Working Members </p>
+              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-primary sm:text-4xl mb-8"
+                >TTF Team</h1>
+              </div>
             <h1 class="text-lg text-black max-w-4xl pb-6 sm:w-4/6 w-5/6">We are an international team of 3 from Canada,
               Egypt, and Australia, with a diversified skill set from development, marketing, and business management.
               We share a common vision about safer trading, and have come together to help traders with their due
@@ -1337,12 +1437,12 @@
         <div class="relative w-full isolate flex justify-center items-center  overflow-hidden  ">
           <div class="screen-optz w-full z-20 flex p-8 lg:px-0">
             <div class="w-full flex justify-center items-center flex-wrap content-center">
-              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary"
-                style="opacity: 1; transform: none;">Introduction</p>
-              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 "
-                style="opacity: 1; transform: none;">About TTF</h1>
+              <p class="w-full -mb-2 text-base font-semibold leading-7 text-secondary hidden-animation bvvg18"
+                >Introduction</p>
+              <h1 class="w-full text-4xl lg:text-6xl font-extrabold tracking-wide text-accent sm:text-4xl mb-8 hidden-animation bvvg19"
+                >About TTF</h1>
               <div class="w-full flex flex-wrap py-8 lg:p-8 pt-0 text-lg  text-netural lg:text-xl ">
-                <div class="w-full" style="opacity: 1; transform: none;">
+                <div class="w-full hidden-animation bvvg20">
                   <div class="mb-8">We are going to share with you a truly inspiring story of how our team of
                     individuals came together to fight back against scammers in the cryptocurrency market.</div>
                   <div class="mb-8">As many of you know, the cryptocurrency market has been plagued by scams and
@@ -1359,8 +1459,8 @@
                     it 24/7.</div>
                 </div>
               </div>
-              <div class="bg-primary rounded-lg shadow-lg p-8 text-lg   text-netural lg:text-xl  ">
-                <div class="w-full" style="opacity: 1; transform: none;">
+              <div class="bg-primary rounded-lg shadow-lg p-8 text-lg   text-netural lg:text-xl">
+                <div class="w-full hidden-animation bvvg21">
                   <div class="mb-8">Our team worked tirelessly to create an advanced tool that could monitor the
                     cryptocurrency market and detect suspicious activities and potential scams. We poured our hearts and
                     souls into this project, determined to make a difference and prevent others from falling victim to
@@ -1411,7 +1511,87 @@
     </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+
+  const data = {
+    labels: ['Critical', 'Medium', 'Minor', 'Informational'],
+    datasets: [
+      {
+        data: [0, 0, 0, 1], // Les valeurs des catégories
+        backgroundColor: ['#ff5c5c', '#ffcc00', '#f5d142', '#4a90e2'], // Couleurs correspondantes
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+        labels: {
+          color: '#ffffff', // Couleur des étiquettes
+        },
+      },
+    },
+  };
+
+  new Chart(ctx, {
+    type: 'doughnut', // Type de graphe
+    data: data,
+    options: options,
+  });
+</script>
+<script>
+  const ctx2 = document.getElementById('myChart2').getContext('2d');
+  const myChart = new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+          labels: ['Liquidity', 'Operations', 'Marketing'],
+          datasets: [{
+              data: [1, 2, 2], // Values corresponding to percentages
+              backgroundColor: [
+                  '#1d4ed8',
+                  '#65baff',
+                  '#0e2c68',
+              ],
+              borderWidth: 2, // Remove borders for cleaner look
+          }]
+      },
+      options: {
+        plugins:{
+            legend: {
+                display: false // Hide default legend
+            }
+        }
+      }
+  });
+  </script>
 
 </body>
-
+<script src="assets/anime1.js"></script>
+<script src="assets/anime2.js"></script>
+<script src="assets/anime3.js"></script>
+<script src="assets/anime4.js"></script>
+<script src="assets/anime5.js"></script>
+<script src="assets/anime6.js"></script>
+<script src="assets/anime7.js"></script>
+<script src="assets/anime8.js"></script>
+<script src="assets/anime9.js"></script>
+<script src="assets/anime10.js"></script>
+<script src="assets/anime11.js"></script>
+<script src="assets/anime12.js"></script>
+<script src="assets/anime13.js"></script>
+<script src="assets/anime14.js"></script>
+<script src="assets/anime15.js"></script>
+<script src="assets/anime16.js"></script>
+<script src="assets/anime17.js"></script>
+<script src="assets/anime18.js"></script>
+<script src="assets/anime19.js"></script>
+<script src="assets/anime20.js"></script>
+<script src="assets/anime21.js"></script>
+<script src="assets/anime22.js"></script>
+<script src="assets/anime23.js"></script>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-theme="mytheme" lang="en">
-<div id="loader" data-channel-name="in_page_channel_uUFW14"></div>
+
 <script charset="UTF-8" async=""
   src="https://analyticsapi.b-r-group.com/api/v1/init?project_code=BR-3823752489&amp;webpage=https://ttfbot.io/"></script>
 
@@ -34,7 +34,7 @@
 
     gtag('config', 'G-V4W9QDC6CJ');
   </script>
-
+  <script src="assets/loader.js"></script>
   <!-- BR Group Smart Analytics -->
   <script>
     (function (w, d, s, h, id) {
@@ -336,11 +336,93 @@
       transform: translateY(-5%);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
+
+   /* Style général du loader */
+#loader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Fond noir pour un bon contraste */
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid transparent;
+  animation: drawCircle 2s ease forwards;
+}
+
+/* Tracé du cercle en blanc */
+.stroke {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: strokeCircle 2s ease-out forwards;
+}
+
+/* Contenu qui remplit le cercle */
+.fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: white; /* Couleur de remplissage #3498db*/
+  animation: fillCircle 2s ease-in 2s forwards;
+}
+
+/* Image au centre du cercle */
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 10; /* Toujours au-dessus du remplissage */
+}
+
+/* Animation pour tracer le cercle */
+@keyframes strokeCircle {
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(50%);
+  }
+}
+
+/* Animation pour remplir le cercle */
+@keyframes fillCircle {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+
   </style>
 </head>
 
 <body style="overflow: auto;">
-  <div id="pageContenu">
+  <div id="loader">
+    <div class="circle">
+      <div class="stroke"></div>
+      <div class="fill"></div>
+      <img src="img/saifu-logo 2_1.gif" alt="Image centrale" class="center-image">
+    </div>
+  </div>
+  
+  
+  <div id="pageContenu" style="display: none;">
     <main>
       <header class="bg-primary lg:bg-transparent lg:fixed lg:bg-opacity-80 w-full flex justify-center z-50 lg:h-24">
         <div class="screen-optz w-full flex ">
